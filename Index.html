@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formuCss.css">
+    <title>Requisição de Compras Volga</title>
+</head>
+
+<body>
+    <div class="campo">
+
+        <h1 id="titulo">Requisição de Materiais e Ferramentas</h1>
+        <p id="subtitulo">Preencha os campos para realizar a abertura de uma solicitação de Compra</p>
+        <br>
+    </div>
+
+    <form action="https://formsubmit.co/ferramentaria@volga.com.br" method="POST"> 
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="requisitante"><strong>Nome do Requisitante: </strong></label>
+                <input type="text" nome="requisitante" id="requisitante" required style="width:100%">
+            </div>
+            <div class="campo">
+                <label for="departamento"><strong>Departamento: </strong></label>
+                <input type="text" name="departamento" id="departamento" required style="width:100%">
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="email"><strong>E-mail: </strong></label>
+            <input type="email" name="email" id="email" required style="width:90%">
+        </div>
+
+        <div class="campo">
+            <label><strong>Selecione o tipo do produto: </strong></label>
+            <label>
+                <input type="radio" name="tipodeproduto" value="consumoproducao" checked>Material uso e consumo Produção
+            </label>
+
+            <label>
+                <input type="radio" name="tipodeproduto" value="consumoadm">Material uso e consumo Administrativo
+            </label>
+
+            <label>
+                <input type="radio" name="tipodeproduto" value="ferramentaproducao">Ferramenta para Produção
+            </label>
+
+            <label>
+                <input type="radio" name="tipodeproduto" value="ferramentaadm">Ferramenta para Administrativo
+            </label>
+        </div>
+
+        <div class="campo">
+            <label for="urgencia"><strong>Selecione a urgência da compra: </strong></label>
+            <select id="urgencia" required>
+                <option selected disabled value="">Selecione</option>
+                <option>Baixo Impacto</option>
+                <option>Médio Impacto</option>
+                <option>Alto Impacto</option>
+            </select>
+        </div>
+
+        <br>
+
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>Selecione quais processos se encaixam na aquisição do produto: </strong></label><br><br>
+                <input type="checkbox" id="intuito1" name="intuito1" value="melhoriaproducao">
+                <label for="intuito1">MELHORIAS PROCESSO PRODUTIVO</label>
+                <input type="checkbox" id="intuito2" name="intuito2" value="melhoriaadm">
+                <label for="intuito2">MELHORIAS PROCESSO ADMINISTRATIVO</label><br>
+                <input type="checkbox" id="intuito3" name="intuito3" value="melhoriacondicoes">
+                <label for="intuito3">MELHORIAS CONDIÇÕES DE TRABALHO</label>
+                <input type="checkbox" id="intuito4" name="intuito4" value="melhoriaseguranca">
+                <label for="intuito4">MELHORIAS SEGURANÇA NO TRABALHO</label><br>
+                <input type="checkbox" id="intuito5" name="intuito5" value="reposicaoequipamento">
+                <label for="intuito5">REPOSIÇÃO DE EQUIPAMENTO DANIFICADO</label>
+            </div>
+        </fieldset>
+
+        <br>
+
+        <div class="campo">
+            <label><strong>Descreva abaixo o nome do produto e suas características</strong></label><br>
+            <textarea row="6" style="width: 90%; height: 120px;" id="produto" name="produto" required></textarea>
+        </div>
+
+        <button class="botaoenviar" type="submit">Enviar Solicitação</button>
+    </form>
+    
+</body>
+</html>
