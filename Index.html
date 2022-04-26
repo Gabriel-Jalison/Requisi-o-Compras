@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formuCss.css">
+    <title>Requisição de Compras Volga</title>
+</head>
+
+<body>
+    <div class="campo">
+
+        <h1 id="titulo">Requisição de Materiais e Ferramentas</h1>
+        <p id="subtitulo">Preencha os campos para realizar a abertura de uma solicitação de Compra</p>
+        <br>
+    </div>
+
+    <form action="https://formsubmit.co/ferramentaria@volga.com.br" method="POST"> 
+        <input type="hidden" name="_subject" value="Nova Solicitação de Compra!">
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="Requisitante"><strong>Nome do Requisitante: </strong></label>
+                <input type="text" nome="Requisitante" id="Requisitante" required style="width:100%">
+            </div>
+            <div class="campo">
+                <label for="Departamento"><strong>Departamento: </strong></label>
+                <input type="text" name="Departamento" id="Departamento" required style="width:100%">
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="email"><strong>E-mail: </strong></label>
+            <input type="email" name="E-mail" id="E-mail" required style="width:90%">
+        </div>
+
+        <div class="campo">
+            <label><strong>Selecione o tipo do produto: </strong></label>
+            <label>
+                <input type="radio" name="Tipo_de_produto" value="Material uso e consumo Producao" checked>Material uso e consumo Produção
+            </label>
+
+            <label>
+                <input type="radio" name="Tipo_de_produto" value="Material uso e consumo Administrativo">Material uso e consumo Administrativo
+            </label>
+
+            <label>
+                <input type="radio" name="Tipo_de_produto" value="Ferramenta para Producao">Ferramenta para Produção
+            </label>
+
+            <label>
+                <input type="radio" name="Tipo_de_produto" value="Ferramenta para Administrativo">Ferramenta para Administrativo
+            </label>
+        </div>
+
+        <div class="campo">
+            <label for="urgencia"><strong>Selecione a urgência da compra: </strong></label>
+            <select id="urgencia" required>
+                <option selected disabled value="">Selecione</option>
+                <option type="select" name="Selecione_a_urgencia" value="Baixo impacto">Baixo Impacto</option>
+                <option type="select" name="Selecione_a_urgencia" value="Médio impacto">Médio Impacto</option>
+                <option type="select" name="Selecione_a_urgencia" value="Alto impacto">Alto Impacto</option>
+            </select>
+        </div>
+
+        <br>
+
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>Selecione quais processos se encaixam na aquisição do produto: </strong></label><br><br>
+                <input type="checkbox" id="Referencia1" name="Referencia1" value="Melhorias Processo Produtivo">
+                <label for="Referencia1">Melhorias Processo Produtivo</label>
+                <input type="checkbox" id="Referencia2" name="Referencia2" value="Melhorias Processo Administrativo">
+                <label for="Referencia2">Melhorias Processo Administrativo</label><br>
+                <input type="checkbox" id="Referencia3" name="Referencia3" value="Melhorias Condições de Trabalho">
+                <label for="Referencia3">Melhorias Condições de Trabalho</label>
+                <input type="checkbox" id="Referencia4" name="Referencia4" value="Melhorias Segurança no Trabalho">
+                <label for="Referencia4">Melhorias Segurança no Trabalho</label><br>
+                <input type="checkbox" id="Referencia5" name="Referencia5" value="Reposição de Equipamento Danificado">
+                <label for="Referencia5">Reposição de Equipamento Danificado</label>
+            </div>
+        </fieldset>
+
+        <br>
+
+        <div class="campo">
+            <label><strong>Descreva abaixo o nome do produto e suas características</strong></label><br>
+            <textarea row="6" style="width: 90%; height: 120px;" id="produto" name="produto" required></textarea>
+        </div>
+
+        <div id="botoespagina">
+        <button class="botaoenviar" type="submit">Enviar Solicitação</button>
+        <label for="avatar">Selecione a imagem do produto</label>
+        <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+        <input type="hidden" name="_next" value="https://gabriel-jalison.github.io/requisicaodecompras/enviado.html">
+        <input type="hidden" name="_autoresponse" value="Solicitação de compra aberta com sucesso">
+        </div>
+    </form>
+
+</body>
+</html>
