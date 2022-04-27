@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#titulo {
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    margin-bottom: 5px;
+
+}
+
+#subtitulo {
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+}
+
+fieldset {
+    border: 0;
+}
+
+body {
+    background-image: url(https://i.ibb.co/HzhttcT/Imagem-Volga4.png);
+    background-size: cover;
+    background-attachment:fixed;
+    font-family: sans-serif;
+    font-size: 1em;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 2%;
+    justify-content: center;
+    margin-bottom: 5em;
+}
+
+input, select, textarea, button {
+    border-radius: 5px;
+}
+
+.campo {
+    margin-bottom: 1em;
+    
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    color: white;
+     display: block;
+}
+
+fieldset .campo {
+    float: left;
+    margin-right: 1em;
+}
+
+fieldset .grupo {
+    float: left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
+    padding: 0.2em;
+    border: 1px solid #59429d;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+    display: block;
+    width: 95%;
+    margin-right: 167px;
+
+}
+
+.campo select option {
+    padding-right: 1em;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #e0e0f8;
+}
+
+.botaoenviar {
+    font-size: 1.0em;
+    background-color: greenyellow;
+    border: 0;
+    margin-bottom: 1em;
+    color: black;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    position: relative;
+    max-width: 152px;
+    max-height: 23px;
+    left: 94%;
+    margin-top: 10px;
+
+
+
+}
+
+/*PAREI AQUI RESPONSIVIDADE*/
+@media screen and ( max-width: 1200px) {
+    form { width: 740.125px;
+
+    }
+}
+
+#botoespagina {
+    margin: 0;
+    display: flex;
+    width: 90%;
+}
+
+#Selecionarimagem {
+
+    display: flex;
+    position: relative;
+    left: 29%;
+    top: 80%;
+}
+.botaoenviar:hover {
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+    opacity: 0.6;
+}
+
+#check {
+    display: flex;
+    width: 90%;
+    color: white;
+    flex-direction: column;
+}
+
+#check .caixacheck {
+    display:inline;
+    flex-direction: column;
+}
+ 
+form {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-bottom: 40px;
+    padding-top: 40px;
+    padding-left: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    max-height: 835.22px;
+    max-width: 740.125px;
+}
+
+.uploads #avatar {
+    position: relative;
+    left: 1%;
+    width: 115px;
+    height: 22px;
+
+}
+
+.uploads label {
+    margin-bottom: 0.2em;
+    color: white;
+     display: block;
+}
+
+.uploads #caixaupload { 
+    display: flex;
+
+}
+
+
+
