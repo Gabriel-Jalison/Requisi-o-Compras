@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="servicos.css">
+    <title>Solicitação de Serviços Volga</title>
+</head>
+
+<body>
+    <div id="caixageral">
+    <nav> 
+        <ul>
+            <div class="botaomenu"><li><a href="home.html">Inicio</a></li></div>
+            <div class="botaomenu"><li><a href="compras.html">Solicitação de Compra</a></li></div>
+            <div class="botaomenu"><li><a href="servicos.html">Solicitação de Serviço</a></li></div>
+            <div class="botaomenu"><li><a href="montagem.html">Montagem de Caixa</a></li></div>
+            <div class="botaomenu"><li><a href="">Protocolo de NF's</a></li></div>
+        </ul>
+    </nav>
+    
+    <div id="divtitulo">
+        <h1 id="titulo">Solicitação de Serviços - Manutenção</h1>
+        <p id="subtitulo">Preencha os campos para realizar a abertura de uma Ordem de Serviço</p>
+        <br>
+    </div>
+
+    <form action="https://formsubmit.co/manutencao@volga.com.br" method="POST" enctype="multipart/form-data"> 
+        <input type="hidden" name="_subject" value="Nova Solicitação de Serviço Recebida!">
+        <input type="hidden" name="_template" value="box">
+
+        <fieldset class="cabecalho">
+            <div class="divsfildset">
+                <label class="labelcabecalho" for="SOLICITANTE"><strong>Nome do Solicitante: </strong></label>
+                <input type="text" name="SOLICITANTE" id="SOLICITANTE" required style="width:90%; height: 50%">
+            </div>
+            <div class="divsfildset">
+                <label class="labelcabecalho" for="DEPARTAMENTO"><strong>Departamento: </strong></label>
+                <input type="text" name="DEPARTAMENTO" id="DEPARTAMENTO" required style="width:90%; height: 50%">
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="email"><strong>E-mail: </strong></label>
+            <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required style="width:95%">
+        </div>
+
+        <div class="radio">
+            <label class="tituloradio"><strong>Selecione qual processo se encaixa no serviço: </strong></label>
+
+            <label>
+                <input type="radio" name="NATUREZA DO SERVIÇO" value="Manutenção Corretiva (Equipamento Danificado)" checked> Manutenção Corretiva (Equipamento Danificado)
+            </label>
+
+            <label>
+                <input type="radio" name="NATUREZA DO SERVIÇO" value="Manutenção Preventiva"> Manutenção Preventiva
+            </label>
+
+            <label>
+                <input type="radio" name="NATUREZA DO SERVIÇO" value="Melhoria em Processos Administrativos"> Melhoria em Processos Administrativos
+            </label>
+
+            <label>
+                <input type="radio" name="NATUREZA DO SERVIÇO" value="Melhoria em Processos de Produção"> Melhoria em Processos de Produção
+            </label>
+        </div>
+
+        <div class="selecionar">
+            <label for="TIPO DE SERVIÇO"><strong>Selecione o tipo de serviço: </strong></label>
+            <select id="SERVICO" required style="width: 95.7%; height: 75%">
+                <option selected disabled value="">Selecione</option>
+                <option type="select" name="TIPO DE SERVIÇO" value="Serviços em Máquina">Serviços em Máquina</option>
+                <option type="select" name="TIPO DE SERVIÇO" value="Serviços em Equipamento">Serviços em Equipamento</option>
+                <option type="select" name="TIPO DE SERVIÇO" value="Serviços de Infraestrutura">Serviços de Infraestrutura</option>
+                <option type="select" name="TIPO DE SERVIÇO" value="Serviços de instalação">Serviços de instalação</option> 
+            </select>
+        </div>
+
+        <br>
+
+        <div class="campo">
+            <label><strong>Descreva abaixo o serviço a ser realizado:</strong></label><br>
+            <textarea row="6" style="width: 95%; height: 100px;" id="PRODUTO" name="PRODUTO" required></textarea>
+        </div>
+
+        <br>>
+
+        <div class="selecionarp">
+            <label for="PRIORIDADE"><strong>Selecione a prioridade: </strong></label>
+            <select id="PRIORIDADE" required style="width: 95.7%; height: 75%">
+                <option selected disabled value="">Selecione</option>
+                <option type="select" name="PRIORIDADE" value="Baixa">Baixa</option>
+                <option type="select" name="PRIORIDADE" value="Média">Média</option>
+                <option type="select" name="PRIORIDADE" value="Alta">Alta</option>
+                <option type="select" name="PRIORIDADE" value="Multo Alta">Multo Alta</option> 
+            </select>
+        </div>
+
+        <br>
+
+        <div id="botoespagina">
+            <div class="botenviar">
+            <button class="botaoenviar" type="submit">Enviar Solicitação</button>
+            </div>
+            <div id="logogif"> 
+                <img src="img/logogif.gif">
+            </div>
+            <input type="hidden" name="_next" value="https://gabriel-jalison.github.io/supplyvolga/enviado.html">
+            <input type="hidden" name="_autoresponse" value="SOLICITAÇÃO DE SERVIÇO ABERTA COM SUCESSO, O PROBLEMA SERÁ SOLUCIONADO O MAIS BREVE POSSÍVEL">
+            <input type="hidden" name="_cc" value=" ferramentaria@volga.com.br ">
+            <input type="hidden" name="_cc" value=" kleiber.paiva@volga.com.br ">
+            <input type="hidden" name="_captcha" value="false">
+        </div>
+
+    </form>
+    <div id="copyright">
+        <p>©Copyright 2022 - GabrielJalison</p>
+    </div>
+    </div>
+</body>
+</html>
