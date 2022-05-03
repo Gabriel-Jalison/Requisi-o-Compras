@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#titulo {
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    margin-bottom: 5px;
+    position: relative;
+    top: 165px;
+    left:  45px;
+
+}
+
+
+body {
+    background-image: url(img/ImagemVolga3.png);
+    background-size: cover;
+    font-family: sans-serif;
+    font-size: 1em;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 2%;
+    justify-content: center;
+    margin-bottom: 5em;
+    width: 700px;
+}
+
+form {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-bottom: 40px;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 16%;
+    text-align: center;
+    color: whitesmoke;
+    width: 500px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    position: relative;
+    left: 100px;
+
+    
+
+}
+
+#copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 560px;
+    top: 500px;
+    font-size: 12px;
+    width: 200px;
+    color: whitesmoke;
+    height: 51px;
+    text-shadow: 1px 1px 1px black;
+}
+
+/* AQUI INICIA O MENU VERTICAL*/
+/* LISTAS DO MENU VERTICAL*/
+nav ul li { 
+    list-style: none;
+    display: flex;
+    text-align: center;
+    height: 30px;
+    justify-content: center;
+    padding-top: 4px;
+
+
+}
+
+/* TAG CAIXA QUE ENGLOBA TODAS AS DIVS DOS LINKS */
+nav ul {
+    margin-top: 12px;
+    position: relative;
+}
+
+/* TAG SEMANTICA QUE ENGLOBA TODOS OS CAMPOS DO MENU */
+body nav {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 150px;
+    height: 50px;
+    display:flex;
+    position: relative;
+    left: 520px;
+    top: 310px;
+    border-right: 7px solid white;
+    border-top: 1px solid rgb(245, 245, 245, 0.5);
+    border-left: 1px solid rgb(245, 245, 245, 0.5);
+    border-bottom: 1px solid rgb(245, 245, 245, 0.5);
+    border-radius: 3%;
+    
+}
+
+/* LINKS DO MENU */
+nav a {
+    text-decoration: none;
+    color: #e0e0f8;
+    position: relative; 
+    font-size: 13px;
+    height: 30px;
+    padding-top: 5px;
+
+}
+
+/* DIVS QUE ENGLOBAM OS LINKS DO MENU */
+nav ul div {
+    border-bottom: 1px solid rgba(29,65,19,255);
+    margin-left: 13px;
+    width: 120px;
+    height: 30px;
+    margin-right: 20px;
+    margin-top: -2px;
+}
+
+/* APLICAÇÃO DE EFEITO HOVER NAS DIVS DO MENU VERTICAL DA PÁGINA */
+nav ul div:hover {
+    background-color: rgb(255, 255, 255, 0.1);
+    font-weight: bold;
+    transition: 0.5s;
+    zoom: 101%;
+    border-left: 5px solid white;
+}
+/* AQUI TERMINA O MENU VERTICAL*/
+
+
