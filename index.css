@@ -1,0 +1,466 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-image: url(img/lucas.jpg);
+    background-size: cover;
+    background-attachment:fixed;
+    font-family: sans-serif;
+    font-size: 1em;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 110px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+    flex-wrap: wrap;
+    flex: 1 1 800px;
+}
+
+html {
+    width: 100%;
+    height: 500px;
+    margin-right: 0px;
+    padding-right: 0px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 0px;
+
+}
+
+
+/*AQUI INICIA A RESPONSIVIDADE DO SITE*/
+@media screen and ( max-width: 1200px) {
+    nav { width: 1000.125px;
+
+    }
+    img { width: 10px;
+
+    }
+}
+/* AQUI TERMINA A RESPONSIVIDADE DO SITE */
+
+
+/* AQUI INICIA O MENU VERTICAL*/
+/* LISTAS DO MENU VERTICAL*/
+nav ul li { 
+    list-style: none;
+    padding: 5px;
+    padding-top: 20px;
+    display: flex;
+    text-align: center;
+
+}
+
+/* TAG CAIXA QUE ENGLOBA TODAS AS DIVS DOS LINKS */
+nav ul {
+    margin-top: 14px;
+}
+
+/* TAG SEMANTICA QUE ENGLOBA TODOS OS CAMPOS DO MENU */
+body nav {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-bottom: 50px;
+    padding-top: 40px;
+    padding-left: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    max-height: 835.22px;
+    max-width: 700.125px;
+    border-radius: 2%;
+    margin-top: 92px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+/* LINKS DO MENU */
+nav a {
+    text-decoration: none;
+    color: #e0e0f8;
+    position: relative;
+    padding-bottom: 10px;
+    padding-top: 5px; 
+    display: flex; 
+    margin-left: 20px;
+    font-size: 18px;
+    
+}
+
+
+/* DIVS QUE ENGLOBAM OS LINKS DO MENU */
+nav ul div {
+    border-bottom: 1px solid rgba(29,65,19,255);
+    margin-left: 13px;
+    margin-right: 23px;
+    width: 330px;
+    display: flex;
+    justify-content: left;
+}
+
+nav ul .botaomenu:active {
+    background-color:  whitesmoke;
+    color: black;
+}
+
+/* APLICAÇÃO DE EFEITO HOVER NAS DIVS DO MENU VERTICAL DA PÁGINA */
+nav ul div:hover {
+    background-color: rgb(255, 255, 255, 0.1);
+    font-weight: bold;
+    transition: 0.5s;
+    zoom: 101%;
+    border-left: 5px solid white;
+}
+/* AQUI TERMINA O MENU VERTICAL*/
+
+
+
+/* AQUI INICIA O GIF LOGO VOLGA CONTIDO NO CONTEUDO FORMULARIO */
+
+nav #logogif img {
+    width: 220px;
+    height: 235px;
+    display: relative;
+    left: 50%;
+    padding: 5px;
+    display: flex;
+    background-color: rgba(230, 230, 235, 0.97);
+    border-radius: 10%;
+    border: 1px solid rgba(18, 63, 18, 0.979);
+
+
+}
+
+
+nav #logogif img:hover {
+    background-color: rgb(224, 224, 248, 1.0);
+}
+
+
+nav #logogif {
+    width: 640px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding-left: 8px;
+
+
+}
+
+/* AQUI FINALIZA O GIF LOGO VOLGA CONTIDO NO CONTEUDO DO FORMULÁRIO */
+
+footer {
+    margin-top: 525px;
+    width: 100%;
+    height: 150px;
+    background-color: rgba(18, 63, 18, 0.5);
+    margin-bottom: 0px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    font-weight: 630;
+    border-top: 3px solid white;
+}
+
+footer #caixafooter {
+    width: 812.13px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-bottom: 0px;
+
+
+
+}
+
+#caixafooter #img1 img {
+    width: 85px;
+    height: 85px;
+    display: flex;
+    position: relative;
+    margin-right: 70px;
+}
+
+#caixafooter #img1 {
+    display: flex;
+    position: relative;
+    align-items: center;
+
+}
+
+#caixafooter #img2 img {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+
+}
+
+#caixafooter #img3 img {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+
+}
+
+#caixafooter #caixaendereco p {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    font-size: 10px;
+    width: 300px;
+    color: whitesmoke;
+}
+
+#caixafooter #caixaendereco {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+}
+
+#caixafooter #caixacontato p {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    font-size: 10px;
+    width: 200px;
+    color: whitesmoke;
+}
+
+#caixafooter #caixacontato {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    
+}
+
+#caixafooter #caixacontato p:nth-of-type(2n) {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    font-size: 10px;
+    width: 200px;
+    color: whitesmoke;
+}
+
+#caixafooter #caixacontato p:nth-of-type(3n) {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    font-size: 10px;
+    width: 200px;
+    color: whitesmoke;
+}
+
+body header {
+width: 100%;
+height: 75px;
+display: flex;
+position: absolute;
+justify-content: center;
+background-color: rgba(18, 63, 18, 0.5);
+margin-top: 0px;
+border-bottom: 3px solid white;
+flex-wrap: wrap;
+
+}
+
+header div {
+    margin-top: 508px;
+    width: 812.13px;
+    height: 45px;
+    margin-bottom: 0px;
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+}
+
+body header #anititulo1 img {
+    color: white;
+    position: relative;
+    top: -498px;
+    align-items: center;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: flex-start;
+    left: -190px;
+    background-color: #e0e0f8;
+    border: 1px solid white;
+    border-radius: 10px;
+
+}
+
+
+
+body header div #anititulo  {
+    display: flex;
+    color:  rgb(255, 255, 255, 0.8);
+    position: relative;
+    top: -498px;
+    padding: 10px;
+    align-items: center;
+    font-size: 22px;
+    left: -190px;
+    font-weight: bold;
+}
+
+header ul { 
+    list-style: none;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    left: 550px;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 45px;
+    width: 130px;
+    margin-top: 13px;
+    padding-right: 5px;
+    border-radius: 10px;
+    padding-top: 3px;
+}
+
+header ul:hover {
+    width: 170px;
+    transition: 1s;
+}
+
+ul li a img {
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    opacity: 0.8;
+    filter:contrast(0%)
+}
+ul li a img:hover {
+    transform: scale(1.2);
+    opacity: 1.0;
+    filter:contrast(100%)
+}
+
+hr {
+    visibility: hidden;
+}
+
+body header #menu1topo {
+    width: 100%;
+    height: 56px;
+    background-color: rgba(33,33,33,1);
+    display: flex;
+    align-items: center;
+    list-style: none;
+    position:absolute;
+    top: -563px;
+}
+
+header #menu1topo img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 20px;
+    position: relative;
+    margin-right: 5px;
+}
+
+header #menu1topo li {
+    display: inline-flex;
+    color: #e0e0f8;
+    font-weight: 550;
+    position: relative;
+    left: 70px;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+header #menu1topo #linkvolga #bot3 {
+    display: flex;
+    color: rgba(33,33,33,1);
+    font-weight: 900;
+    position: absolute;
+    font-size: 14px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 15px;
+    transition: 0.9s linear;
+
+
+}
+
+header #menu1topo #linkvolga {
+    width: 150px;
+    height: 31px;
+    display: flex;
+    position: relative;
+    left: 560px;
+    background-color: white;
+    transition: 0.7s;
+    justify-content:left;
+
+}
+
+
+#menu1topo #linkvolga #bot3:hover {
+    color: white;
+    transition: 0.5s;
+}
+
+header #menu1topo #linkvolga:hover {
+    width: 0px;
+    height: 31px;
+    transition: 0.5s linear;
+    transition-property: background-color;
+    transition-timing-function: linear;
+    background-color: aliceblue;
+    position: relative;
+    left: 560px;
+    border: 1px solid white;
+    border-radius: 0px 10px 10px 0px;
+}
+
+#copryght {
+    color: aliceblue;
+    display:flex;
+    position: absolute;
+    top: 120px;
+    left: 300px;
+
+}
+
+#copryght a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
